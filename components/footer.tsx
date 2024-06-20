@@ -26,7 +26,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <>
-      <footer className="footer p-10 bg-inherit text-base-content">
+      <footer className="footer p-16 bg-inherit text-base-content m-10">
         <nav>
           <h6 className="footer-title text-red-600 font-bold cursor-pointer">
             Genre
@@ -51,7 +51,7 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="link link-hover text-red-500 font-semibold hover:text-red-100"
+              className="link link-hover text-red-500 font-semibold"
             >
               {link.label}
             </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="link link-hover text-red-500 font-semibold hover:text-red-100"
+              className="link link-hover text-red-500 font-semibold"
             >
               {link.label}
             </Link>
