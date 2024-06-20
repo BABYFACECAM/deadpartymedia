@@ -1,11 +1,15 @@
-import Footer from "@/components/footer";
+import { Container } from "@/components/container";
 import Hero from "@/components/hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Hero />
-    </main>
+    <>
+      <main className="flex min-h-screen flex-col  justify-between p-24">
+        <Hero />
+
+        <Container>Dead Party Media</Container>
+      </main>
+    </>
   );
 }

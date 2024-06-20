@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const navLinks = [
   { href: "/hip-hop", label: "Hip-Hop" },
   { href: "/rock", label: "Rock" },
@@ -23,11 +23,21 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black sticky top-0 z-50 p-2">
       <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
         <div className="flex justify-between">
           <div className="max-w-10 text-xl font-bold capitalize text-red-800 flex items-center">
-            <Link href="/">Dead Party Media</Link>
+            <Link href="/">
+              <Image
+                src={
+                  "https://y2pf5vl8vyp1ou8s.public.blob.vercel-storage.com/dead-party-media.png-WTNWdM12sPtnVAO8Dx3HyHwjG76tAN.webp"
+                }
+                alt="Dead Party Media logo"
+                height={500}
+                width={500}
+                className="w-full h-full"
+              />
+            </Link>
           </div>
 
           <div className="flex flex-row">

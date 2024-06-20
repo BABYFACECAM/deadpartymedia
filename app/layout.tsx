@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}flex min-h-screen m-0 p-0 flex-col`}>
+      <body className={`${inter.className}flex flex-col`}>
         <Navbar />
-        {children}
+        <main className="flex-grow min-h-screen m-2 p-2">
+          {children}
+          <Analytics />
+        </main>
         <Footer />
       </body>
     </html>
