@@ -26,7 +26,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <>
-      <footer className="footer p-16 bg-inherit text-base-content m-10">
+      <footer className="footer p-14 bg-inherit text-base-content m-10">
         <nav>
           <h6 className="footer-title text-red-600 font-bold cursor-pointer">
             Genre
