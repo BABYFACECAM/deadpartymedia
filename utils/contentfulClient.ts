@@ -15,8 +15,8 @@ console.log("CONTENTFUL_SPACE_ID:", CONTENTFUL_SPACE_ID);
 console.log("CONTENTFUL_ACCESS_TOKEN:", CONTENTFUL_ACCESS_TOKEN);
 
 const client = createClient({
-  space: CONTENTFUL_SPACE_ID!,
-  accessToken: CONTENTFUL_ACCESS_TOKEN!,
+  space: CONTENTFUL_SPACE_ID,
+  accessToken: CONTENTFUL_ACCESS_TOKEN,
 });
 
 const previewClient = createClient({
