@@ -31,12 +31,11 @@ export default async function FeaturedPost() {
         )}
       </div>
 
-      <div className="relative flex flex-1 basis-1/2 flex-col justify-center py-6 px-4 lg:px-16 lg:py-12 xl:px-24">
-        <div className="mb-2 flex flex-wrap items-center">
+      <div className="relative flex basis-1/2 flex-col justify-center px-4 lg:px-16 lg:py-12 xl:px-24">
+        <div className="badge badge-error gap-2 mb-2 flex flex-wrap items-center">
           <div
             className={twMerge(
-              "ml-auto pl-2 lg:absolute lg:top-8 xl:top-12 text-xs text-gray-600",
-              "lg:block"
+              " pl-2 lg:absolute lg:top-8 xl:top-12 text-xs text-gray-600"
             )}
           >
             {featuredPost.genre}

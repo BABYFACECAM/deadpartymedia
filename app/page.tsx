@@ -10,11 +10,11 @@ export default async function Home() {
         <Hero />
         <FeaturedPost />
         <Container className="my-8 md:bd-10 lg:mb-16">
-          <ArticleSection category="Hip-Hop" title="Hip-Hop" />
+          {/*<ArticleSection category="Hip-Hop" title="Hip-Hop" />
           <ArticleSection category="Rock" title="Rock" />
           <ArticleSection category="Country" title="Country" />
           <ArticleSection category="EDM" title="EDM" />
-          <ArticleSection category="Local Spotlight" title="Local Spotlight" />
+          <ArticleSection category="Local Spotlight" title="Local Spotlight" />*/}
         </Container>
       </main>
     </>
